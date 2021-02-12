@@ -24,8 +24,8 @@ namespace RSA
 
         static void Main(string[] args)
         {
-            BigInteger p; // (Из файла = 34028236692093846346337460743125234789)
-            BigInteger q; // (Из файла = 4412821669999384634631116134234789129911311313219793)
+            BigInteger p;
+            BigInteger q;
 
             // Задаём числа p и q из файла (должны быть простыми).
             using (StreamReader fs = new StreamReader("pq.txt"))
