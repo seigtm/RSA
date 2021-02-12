@@ -61,8 +61,10 @@ namespace RSA
             // Вычисляем число d.
             BigInteger d = GenerateD(e, phi);
 
-            Console.WriteLine($"Открытый ключ: (e = {e}, n = {n})");
-            Console.WriteLine($"Закрытый ключ: (d = {d}, n = {n})");
+            string openKeyText = $"Открытый ключ: (e = {e}, n = {n})";
+            Console.WriteLine(openKeyText);
+            string secretKeyText = $"Закрытый ключ: (d = {d}, n = {n})";
+            Console.WriteLine(secretKeyText);
 
             // Шифруем и дешифруем сообщение.
             Console.Write("Введите число m (< n - 1), которое необходимо зашифровать: ");
@@ -71,6 +73,16 @@ namespace RSA
             BigInteger decryptedM = BigInteger.ModPow(cryptedM, d, n);
             Console.WriteLine($"Зашифрованное сообщение: {cryptedM}");
             Console.WriteLine($"Расшифрованное сообщение: {decryptedM}");
+
+            // Записываем ключи в файлы.
+            using (StreamWriter fs = new StreamWriter("openKey.txt"))
+            {
+                fs.WriteLine(openKeyText);
+            }
+            using (StreamWriter fs = new StreamWriter("secretKey.txt"))
+            {
+                fs.WriteLine(secretKeyText);
+            }
         }
     }
 }
