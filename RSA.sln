@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30804.86
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RSA", "RSA\RSA.csproj", "{DB94E179-138A-4924-899D-E89381F141FA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DB94E179-138A-4924-899D-E89381F141FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB94E179-138A-4924-899D-E89381F141FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB94E179-138A-4924-899D-E89381F141FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB94E179-138A-4924-899D-E89381F141FA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E15B85DA-221D-4253-9215-D3ADCF497BB9}
+	EndGlobalSection
+EndGlobal
